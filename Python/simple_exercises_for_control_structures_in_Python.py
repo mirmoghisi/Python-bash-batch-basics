@@ -40,7 +40,54 @@ for i in range(len(heights)):
 # While Loop
 # 1. Print out numbers from 0 to 4
 print ("1. Print out numbers from 0 to 4")
+i = 0
 while i < 5:
     print (i)
     i += 1
 
+# 2. use while loop to print out only even numbers lower than 15
+print ("2. use while loop to print out only even numbers lower than 15")
+i = 0
+while i < 15:
+    if i % 2 == 0:
+        print (i)
+    i += 1
+
+# 3. use while loop to print all numbers lower than 15 but skip first five values
+print ("3. use while loop to print all numbers lower than 15 but skip first five values")
+i = 0
+while i < 15:
+    if i < 5:
+        i += 1
+        continue
+    print (i)
+    i += 1
+    
+# ACTORS
+actors = [
+    "Nathan Fillion",
+    "Gina Torres",
+    "Alan Tudyk",
+    "Morena Baccarin",
+    "Adam Baldwin",
+    "Jewel Staite",
+    "Sean Maher",
+    "Summer Glau",
+    "Ron Glass"
+]
+
+roles = [
+    "Captain Malcolm Reynolds",
+    "Zoe Washburn",
+    "Hoban Washburn",
+    "Inara Serra",
+    "Jayne Cobb",
+    "Kaylee Frye",
+    "Dr. Simon Tam",
+    "River Tam",
+    "Derrial Book"
+]
+print ("Featuring:")
+print ("=====================")
+for i in range(len(actors)):
+    print (actors[i] + " as " + roles[i])
